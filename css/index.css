@@ -238,8 +238,30 @@ body {
 	}
 }
 
+
 @media (max-width: 375px) {
 	.content-header h1 {
 		font-size: 3rem;
+	}
+} */
+@media (max-width: 1024px) {
+	.flex-container {
+		flex-direction: column;
+	}
+
+	.container {
+		width: 100%;
+	}
+}
+/* 
+@media (max-width: 375px) {
+	.flex-container {
+		flex-direction: column;
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.container {
+		width: 100%;
 	}
 } */
