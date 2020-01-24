@@ -84,12 +84,12 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -104,99 +104,114 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+	display: block;
 }
 
 body {
-  line-height: 1;
+	line-height: 1;
 }
 
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+	quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none;
+	content: '';
+	content: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /******************************************************/
 body {
-  /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Roboto', sans-serif;
-  background: #181818;
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Roboto', sans-serif;
+	background: #181818;
 }
 
 .container {
-  margin-left: 20%;
-  margin-right: 20%;
+	width: 90%;
+	margin: auto;
 }
 
 .breakpoint {
-  margin-top: 2%;
-  background: white;
-  width: 100%;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	background: white;
+	width: 100%;
 }
 
 .navbar {
-  margin-top: 10%;
-  display: flex;
-
+	margin-top: 10%;
+	display: flex;
 }
 
 .nav-link {
-  font-size: 25px;
-  text-decoration: none;
-  color: white;
-  margin-right: 30px;
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+	margin-right: 30px;
 }
 
 .active {
-  color: #673ab6;
+	color: #673ab6;
 }
 
 .nav-link:hover {
-  color: gray;
+	color: gray;
 }
 
 .content-header {
-  font-size: 25px;
-  margin-top: 10%;
-  color: #673ab6;
+	font-size: 25px;
+	margin-top: 5%;
+	color: #673ab6;
 }
 
 .content-header h1 {
-  font-size: 125px;
-  color: white;
-  margin-bottom: 20px;
+	font-size: 5rem;
+	color: white;
+	margin-bottom: 20px;
 }
 
 .social-links {
-  display: flex;
-  margin-top: 10%;
+	display: flex;
+	margin-top: 5%;
 }
 
 .social-link {
-  font-size: 20px;
-  text-decoration: none;
-  color: gray;
-  margin-right: 30px;
+	font-size: 20px;
+	text-decoration: none;
+	color: gray;
+	margin-right: 30px;
 }
 
 .social-link:hover {
-  color: white;
+	color: white;
+}
+
+@media (max-width: 740px) {
+	.navbar {
+		flex-direction: column-reverse;
+	}
+	.social-links {
+		display: block;
+	}
+}
+
+@media (max-width: 375px) {
+	.content-header h1 {
+		font-size: 3rem;
+	}
 }
